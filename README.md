@@ -218,7 +218,7 @@ docker run \
 	--env AWCY_API_KEY=complicated_password \
 	--env LOCAL_WORKER_ENABLED=true \
 	--env LOCAL_WORKER_SLOTS=4 \
-	xiph/awcy:latest
+	nasirhemed/awcy-awcy:latest
 ```
 
 Output:
@@ -315,7 +315,7 @@ docker run \
 	--name xiph-awcy-worker-1 \
 	--volume ${HOME}/xiph-media-files:/media \
 	--env SSH_PUBKEY="$(cat /tmp/awcy/conf/awcy.pub)"
-	xiph/awcy-worker:latest
+	nasirhemed/awcy-worker:latest
 
 docker run \
 	-it \
@@ -323,7 +323,7 @@ docker run \
 	--name xiph-awcy-worker-2 \
 	--volume ${HOME}/xiph-media-files:/media \
 	--env SSH_PUBKEY="$(cat /tmp/awcy/conf/awcy.pub)"
-	xiph/awcy-worker:latest
+	nasirhemed/awcy-worker:latest
 
 ...
 ```
